@@ -1,0 +1,217 @@
+
+.riddle-container {
+  margin: 70px 0px;
+}
+
+h4.riddle-heading {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: 500;
+  color: #754ef9 !important;
+  line-height: 1.5;
+}
+
+div.accordian-title {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px;
+  border-bottom: 2px solid #754ef9;
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.1s linear;
+  max-width: 90%;
+  color: #888
+}
+.accordian-title span {
+  transform-origin: center center;
+  transition: all 0.1s linear;
+  height: 24px;
+}
+.accordian-title.active span {
+  transform: rotate(45deg);
+  transform-origin: center center;
+  transition: all 0.1s linear;
+}
+.accordian-title.active span svg {
+  stroke: #ff0000;
+}
+.accordian-content {
+  display: none;
+  padding: 20px;
+  background: #f1f1f1;
+  max-width: 90%;
+}
+.col-lg-8 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: 83%;
+}
+
+.italic {
+  font-style: italic;
+}
+
+#text-art-hard {
+  font-size: 0.1em;
+  text-align: center;
+}
+
+/* Extra small phones (phones, 320px and down) */
+@media only screen and (max-width: 321px) {
+  #text-art-hard {
+    font-size: 0.3em;
+  }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 375px) {
+  #text-art-hard {
+    font-size: 0.35em;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 375px) {
+  #text-art-hard {
+    font-size: 0.35em;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 425px) {
+  #text-art-hard {
+    font-size: 0.4em;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #text-art-hard {
+    font-size: 0.5em;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #text-art-hard {
+    font-size: 0.7em;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #text-art-hard {
+    font-size: 0.9em;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #text-art-hard {
+    font-size: 1.2em;
+  }
+}
+
+.fun-fact-card {
+  box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  margin: 40px auto;
+  max-width: 80%;
+  padding: 50px 0px;
+}
+@media screen and (max-width: 480px) {
+  .fun-fact-card {
+    max-width: 100%;
+  }
+}
+
+.fun-fact-card h2 {
+  margin-top: 30px;
+  font-size: 2.1em;
+  color: #754ef9;
+  font-weight: 700;
+}
+
+.fact {
+  width: 70%;
+  line-height: 150%;
+  font-weight: 300;
+  font-size: 1em;
+  text-align: center;
+}
+
+button {
+  width: 160px;
+  height: 50px;
+  font-size: 1.1em;
+  border-radius: 25px;
+  border-style: none;
+  color: #fff;
+  background-color: #49aafe;
+  border-bottom: 4px solid #4d90fe;
+}
+button:focus {
+  outline: none;
+}
+button:active {
+  border: 0;
+}
+
+.fade {
+  opacity: 0;
+}
+
+.riddle-btn {
+  margin-top: 30px;
+  line-height: 4.5;
+  padding: 15px 40px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #754ef9;
+  box-shadow: 0px 5px 20px #754ef9;
+  cursor: pointer;
+  margin-bottom: 10000px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.riddle-btn span {
+  font-weight: 550;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.riddle-btn i {
+  margin-left: 5px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.riddle-btn:hover i {
+  transform: translateX(5px);
+}
+
+.moving-left {
+  height: 100px;
+  position: relative;
+  transition: transform 0.3s ease;
+  transform: translateX(0px);
+  width: 100px;
+}
+.moving-left:hover {
+  transform: translateX(10px);
+}
+
+.moving-left {
+  left: 8px;
+  position: absolute;
+  top: 30px;
+  z-index: 99;
+}

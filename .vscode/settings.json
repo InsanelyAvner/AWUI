@@ -1,0 +1,9 @@
+{
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorWidth": 2,
+    "editor.smoothScrolling": true,
+    "terminal.integrated.smoothScrolling": true,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.mouseWheelScrollSensitivity": 2
+}

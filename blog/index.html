@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Blog | Avner's Website</title>
+
+        <link rel="stylesheet" href="css/blog.css" />
+
+        <!-- JQuery via Google CDN -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="header__inner">
+                <div class="header__container">
+                    <div class="header__logo">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="intro">
+            <div class="container">
+                <div class="container__inner">
+                    <div class="intro__heading">
+                        <h1 class="intro__title">My Blog</h1>
+                        <p class="intro__description">
+                            This is where I post about interesting topics. I update this blog occasionally.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <span style="z-index: -1;left:0;top:0;position:absolute;">
+                    <svg width="335" height="88" viewBox="0 0 335 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            opacity="0.1"
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M334.56 13.0529C291.502 42.4873 153.788 56.3719 149.926 -53.2883C148.801 -85.4378 -7.09241 31.3943 -60.2098 -30.0453C-92.1047 -19.3559 -174 -48.4668 -174 -48.4668C-63.8587 -0.928421 -108.385 7.84241 -108.385 7.84241C-34.9086 33.6309 -0.497482 72.1367 74.3028 83.2895L75.5561 83.476C158.559 95.6036 243.786 83.3985 334.262 13.2082L334.56 13.0529Z"
+                            fill="url(#paint0_linear_56:65)"
+                        />
+                        <defs>
+                            <linearGradient id="paint0_linear_56:65" x1="-80" y1="-9.00001" x2="75.6821" y2="-228.975" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#4A6CF7" />
+                                <stop offset="1" stop-color="#4A6CF7" stop-opacity="0" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </span>
+                <span style="z-index:-1;bottom:0;right:0;position:absolute;">
+                    <svg width="151" height="89" viewBox="0 0 151 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            opacity="0.1"
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M0.373885 22.8522C50.4439 8.2434 185.662 37.8077 155.281 143.246C146.368 174.156 330.833 111.507 362.247 186.403C395.885 186.146 464.692 239.248 464.692 239.248C374.757 159.859 419.806 165.347 419.806 165.347C357.969 118.018 337.216 70.7304 269.576 36.9021L268.443 36.3357C193.308 -0.966315 108.504 -15.8291 0.705692 22.7973L0.373885 22.8522Z"
+                            fill="url(#paint0_linear_56:66)"
+                        />
+                        <defs>
+                            <linearGradient id="paint0_linear_56:66" x1="419.555" y1="120.68" x2="280.543" y2="310.404" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#4A6CF7" />
+                                <stop offset="1" stop-color="#4A6CF7" stop-opacity="0" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </span>
+                <span style="z-index:-1;left:50%;top:0;position:absolute;">
+                    <svg width="96" height="46" viewBox="0 0 96 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M93.3985 10.1646C100.119 -14.915 85.238 -40.68 60.1645 -47.3984C35.091 -54.1168 9.32157 -39.244 2.60151 -14.1644C-4.11527 10.903 10.7621 36.6802 35.8355 43.3986C60.909 50.117 86.6818 35.232 93.3985 10.1646Z"
+                            fill="url(#paint0_radial_56:62)"
+                        />
+                        <defs>
+                            <radialGradient id="paint0_radial_56:62" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(2.60151 -14.1644) rotate(15) scale(94)">
+                                <stop stop-color="white" />
+                                <stop offset="0.569" stop-color="#F0F4FD" />
+                                <stop offset="0.993" stop-color="#D9E0F0" />
+                            </radialGradient>
+                        </defs>
+                    </svg>
+                </span>
+            </div>
+        </section>
+        
+        <section>
+            <div class="container">
+                    <div class="cards-container">
+                        <div class="card">
+                            <div class="card__container">
+                                <a href="posts/jurassic-mile" class="card__image">
+                                    <img src="./images/jurassic-mile/thumbnail-rectangle.webp" alt="image" class="a8" />
+                                </a>
+                                <div class="card__content">
+                                    <span class="card__category">Sports</span>
+
+                                    <h3><a href="posts/jurassic-mile" class="card__title" data-post-detail="jm--title"></a></h3>
+
+                                    <p class="card__description">
+                                        Our family went cycling at Changi Jurassic Mile. It was a really fun experience. We started at Changi and ended at east coast...
+                                    </p>
+
+                                    <div class="card__details">
+                                        <div class="details__author">
+                                            <div class="author__img">
+                                                <img src="images/author.webp" alt="author" />
+                                            </div>
+                                            <div class="author__name">
+                                                <h4>By <a href="javascript:void(0)" class="link">Avner</a></h4>
+                                                <p class="author__role">Website owner</p>
+                                            </div>
+                                        </div>
+                                        <div class="details__date">
+                                            <h4>Date</h4>
+                                            <p data-post-detail="jm--date"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__container">
+                                <a href="posts/riddles/" class="card__image">
+                                    <img src="images/riddles/thumbnail.webp" alt="image" />
+                                </a>
+                                <div class="card__content">
+                                    <span class="card__category">Comedy</span>
+
+                                    <h3><a href="posts/riddles/" class="card__title" data-post-detail="r--title"></a></h3>
+
+                                    <p class="card__description">
+                                        Bored? Here are 15 riddles for you to solve! Rember, the answer isn't always as expected!
+                                    </p>
+                                    <div class="card__details">
+                                        <div class="details__author">
+                                            <div class="author__img">
+                                                <img src="images/author.webp" alt="author" />
+                                            </div>
+                                            <div class="author__name">
+                                                <h4>By <a href="javascript:void(0)" class="link">Avner</a></h4>
+                                                <p class="author__role">Website Owner</p>
+                                            </div>
+                                        </div>
+                                        <div class="details__date">
+                                            <h4>Date</h4>
+                                            <p data-post-detail="r--date"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__container">
+                                <a href="posts/why-python/" class="card__image">
+                                    <img src="images/why-python/banner.webp" alt="image" />
+                                </a>
+                                <div class="card__content">
+                                    <span class="card__category">Coding</span>
+                                    
+                                    <h3><a href="posts/why-python/" class="card__title" data-post-detail="wp--title"></a> </h3>
+                                    
+                                    <p class="card__description">
+                                        Why should you learn Python? Well... this post will tell you the importance of learning a programming language - Python
+                                    </p>
+                                    <div class="card__details">
+                                        <div class="details__author">
+                                            <div class="author__img">
+                                                <img src="images/author.webp" alt="author" class="a8" />
+                                            </div>
+                                            <div class="author__name">
+                                                <h4>By <a href="javascript:void(0)" class="link">Avner</a></h4>
+                                                <p class="author__role">Website owner</p>
+                                            </div>
+                                        </div>
+                                        <div class="details__date">
+                                            <h4>Date</h4>
+                                            <p data-post-detail="wp--date"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__container">
+                                <a href="posts/places-to-cycle/" class="card__image">
+                                    <img src="images/places-to-cycle/thumbnail.webp" alt="image" class="a8" />
+                                </a>
+                                <div class="card__content">
+                                    <span class="card__category">Sports</span>
+
+                                    <h3><a href="posts/places-to-cycle/" class="card__title" data-post-detail="cr--title"></a></h3>
+                                    
+                                    <p class="card__description">
+                                        Are you looking for places to cycle here in Singapore? Well, there are many! Here are my favourite ones.
+                                    </p>
+                                    <div class="card__details">
+                                        <div class="details__author">
+                                            <div class="author__img">
+                                                <img src="images/author.webp" alt="author" />
+                                            </div>
+                                            <div class="author__name">
+                                                <h4>By <a href="javascript:void(0)" class="link">Avner</a></h4>
+                                                <p class="author__role">Website owner</p>
+                                            </div>
+                                        </div>
+                                        <div class="details__date">
+                                            <h4>Date</h4>
+                                            <p data-post-detail="cr--date"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__container">
+                                <a href="posts/create-a-strong-password/" class="card__image">
+                                    <img src="images/passwords/thumbnail.webp" alt="image" />
+                                </a>
+                                <div class="card__content">
+                                    <span class="card__category">Coding</span>
+                                    <h3><a href="posts/create-a-strong-password/" class="card__title" data-post-detail="p--title"></a></h3>
+                                    <p class="card__description">
+                                        Have you found it difficult to create a strong password? This post can help you to create a secure one!
+                                    </p>
+                                    <div class="card__details">
+                                        <div class="details__author">
+                                            <div class="author__img">
+                                                <img src="images/author.webp" alt="author" />
+                                            </div>
+                                            <div class="author__name">
+                                                <h4>By <a href="javascript:void(0)" class="aH hover:aI">Avner</a></h4>
+                                                <p class="author__role">Website owner</p>
+                                            </div>
+                                        </div>
+                                        <div class="details__date">
+                                            <h4>Date</h4>
+                                            <p data-post-detail="p--date"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pages">
+                        <div class="pages__container">
+                            <ul class="pages__buttons-list">
+                                <li>
+                                    <a href="javascript:void(0)" style="cursor: not-allowed;">
+                                        Prev
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        1
+                                    </a>
+                                </li>
+                                <!-- <li>
+                                    <a href="javascript:void(0)">
+                                        2
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        3
+                                    </a>
+                                </li> -->
+                                <li>
+                                    <a href="javascript:void(0)" style="cursor: not-allowed;">
+                                        ...
+                                    </a>
+                                </li>
+                                <!-- <li>
+                                    <a href="javascript:void(0)">
+                                        12
+                                    </a>
+                                </li> -->
+                                <li>
+                                    <a href="javascript:void(0)" style="cursor: not-allowed;">
+                                        Next
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+              <div class="footer__content">
+                <div class="footer__website">
+                  <div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        <script src="js/post-details.js"></script>
+    </body>
+</html>

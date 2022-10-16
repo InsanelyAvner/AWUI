@@ -1,0 +1,196 @@
+:root {
+    --aw-primary-color: #ea4343;
+    --aw-bg-color: #3c3c3c;
+    --aw-text-color: #b6b2bf;
+}
+
+.fa-theme {
+    --fa-secondary-opacity: 1.0;
+    --fa-primary-color: rgb(108, 108, 108);
+    --fa-secondary-color: var(--aw-primary-color);
+}
+
+.aw_service .service_list .title h3 {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.aw_service .service_list i {
+    cursor: pointer;
+}
+
+.aw_service .service_list ul li {
+    width: 25%;
+}
+
+.aw_service .service_list ul li .list_inner {
+    padding: 40px 30px;
+}
+
+
+@media (max-width: 1040px) {
+    .aw_service .service_list ul li {
+        width: 47%;
+    }
+    .aw_service .service_list ul li.mr6 {
+        margin-right: 6%;
+    }
+    .aw_service .service_list ul li .list_inner {
+        text-align:center;
+    }
+    
+}
+
+@media (max-width: 1440px) {
+    .aw_service .service_list ul li .list_inner {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 425px) {
+    .aw_service .service_list ul li {
+        width: 100%;
+    }
+    .aw_service .service_list ul li.mr6 {
+        margin-right: 0%;
+    }
+    .aw_news .news_list ul li {
+        width: 100%!important;
+    }
+}
+
+.card__image {
+    height: 150px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.aw_service .service_list ul li .project_icon i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.aw_service .service_list ul li .aw_button {
+    margin-top: 25px
+}
+
+.aw_service .service_list ul li .aw_button a {
+    padding: 7px 16px;
+}
+
+.aw_service .service_list ul li .list_inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aw_modalbox.opened .descriptions h4 {
+    margin-bottom: 5px;
+    margin-top: 30px;
+}
+
+.aw_modalbox.opened .descriptions ul li {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.aw_service .service_list ul li .modal_title {
+    display: none;
+}
+
+.aw_resume {
+    margin-bottom: 0px;
+}
+
+.aw_portfolio .portfolio_list ul li .list_inner .image .main {
+    background-size: contain;
+}
+
+.aw_portfolio .portfolio_list ul li .list_inner .image img {
+    border-radius: 10px;
+    opacity: 1;
+    min-width: 0%;
+    margin-top: -25px;
+}
+
+.aw_portfolio .portfolio_list ul li .list_inner .image img[src="img/thumbs/1-1.jpg"] {
+    opacity: 0;
+}
+
+.aw_portfolio .portfolio_list ul li {
+    width: 25%;
+}
+
+
+@media (max-width: 1190px) {
+   .aw_portfolio .portfolio_list ul li {
+        width: 33.3333%;
+        padding-left: 15px;
+   }
+}
+
+@media (max-width: 768px) {
+    .aw_portfolio .portfolio_list ul li {
+        width: 50%;
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .aw_portfolio .portfolio_list ul li {
+        width: 50%;
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .container {
+        max-width: 87%;
+    }
+}
+
+.container {
+    max-width: 85%;
+}
+
+
+.aw_news .news_list ul li {
+    width: 50%;
+}
+
+.aw_news .news_list ul li .list_inner {
+    display: block;
+}
+
+.aw_news .news_list ul li .details {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+}
+
+.aw_news .news_list ul li .image {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.aw_news .aw_learn_more {
+    display: flex;
+    justify-content: center;
+}
+
+.aw_contact .left ul li a {
+    font-size: 27px;
+}
+
+@media (max-width: 500px) {
+    .aw_contact .left ul li a {
+        font-size: 20px;
+    }
+    .aw_portfolio .portfolio_list .details {
+        display: none;
+    }
+}
