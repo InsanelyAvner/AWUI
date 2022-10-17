@@ -5,7 +5,6 @@ $(() => {
 	aw_hero_image();
 	aw_service_popup();
 	aw_portfolio_popup();
-	aw_imgtosvg();
 	aw_popup();
 	aw_data_images();
 	aw_contact_form();
@@ -286,6 +285,8 @@ function aw_imgtosvg(){
 		}, 'xml');
 
 	});
+
+
 }
 
 // -----------------------------------------------------
