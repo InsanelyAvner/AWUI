@@ -175,14 +175,14 @@ function aw_service_popup(){
 	button.on('click',function() {
 		var element = jQuery(this);
 		var parent	= element.closest('.aw_service .service_list ul li');
-		var elImage	= parent.find('.popup_service_image').attr('src');
+		var elImage	= parent.find('.popup_service_image').attr('data-img-src');
 		var title	= parent.find('.title').attr("data-modal-title");
 		var link    = element.closest('.aw_service .service_list ul li').attr("data-project-link")
 		
 		var content = parent.find('.service_hidden_details').html();
 		modalBox.addClass('opened');
 		modalBox.find('.description_wrap').html(content);
-		modalBox.find('.service_popup_informations').prepend(`<div class="image"><img src="img/thumbs/4-2.jpg" alt="" /><a href="${link}" target="_blank"><div class="main" data-img-url="${elImage}"></div></div></a>`);
+		modalBox.find('.service_popup_informations').prepend(`<div class="image"><a href="${link}" target="_blank"><img src="${elImage}" loading="lazy" /></a></div>`);
 		aw_data_images();
 		modalBox.find('.service_popup_informations .image').after(`<div class="main_title"><h3>${title} <a href="${link}" target="_blank"><i class="fa-theme fa-duotone fa-arrow-up-right-from-square"></i></a></h3></div>`);
 		return false;
@@ -226,37 +226,6 @@ function aw_portfolio_popup(){
 	});
 }
 
-// -------------------------------------------------
-// ----------------  NEWS POPUP  -------------------
-// -------------------------------------------------
-
-function aw_news_popup(){
-	
-	"use strict";
-	
-	var modalBox		= jQuery('.aw_modalbox');
-	var button			= jQuery('.aw_news .list_inner .aw_full_link,.aw_news .news_list ul li .details .title a,.aw_news .aw_learn_more a');
-	var closePopup		= modalBox.find('.close');
-	
-	button.on('click',function(){
-		var element = jQuery(this);
-		var parent 	= element.closest('.list_inner');
-		var content = parent.find('.news_hidden_details').html();
-		var image	= element.closest('.list_inner').find('.image .main').data('img-url');
-		var details = parent.find('.details').html();
-		modalBox.addClass('opened');
-		modalBox.find('.description_wrap').html(content);
-		modalBox.find('.news_popup_informations').prepend('<div class="image"><img src="img/thumbs/4-2.jpg" alt="" /><div class="main" data-img-url="'+image+'"></div></div>');
-		modalBox.find('.news_popup_informations .image').after('<div class="details">'+details+'<div>');
-		aw_data_images();
-		return false;
-	});
-	closePopup.on('click',function(){
-		modalBox.removeClass('opened');
-		modalBox.find('.description_wrap').html('');
-		return false;
-	});
-}
 
 // -------------------------------------------------
 // -------------  PROGRESS BAR  --------------------

@@ -262,3 +262,8 @@
         top: -700px;
     }
 }
+.aw_modalbox .service_popup_informations .image img {
+    height: 25vw;
+    object-fit: cover;
+    border-radius: 10px;
+}
