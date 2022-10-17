@@ -35,6 +35,8 @@ $(() => {
 	images.forEach((img) => {
 		imgObserver.observe(img);
 	});
+
+
 });
 
 $(window).on('load', function() {
