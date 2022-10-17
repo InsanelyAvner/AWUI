@@ -1,6 +1,4 @@
 $(() => {
-	"use strict";
-	
 	aw_resume_image_width();
 	aw_nav_bg();
 	aw_trigger_menu();
@@ -21,7 +19,23 @@ $(() => {
 	jQuery(window).on('resize', function(){
 		aw_resume_image_width();
 	});
-	
+
+	const images = document.querySelectorAll("img");
+
+	const imgOptions = {};
+	const imgObserver = new IntersectionObserver((entries, imgObserver) => {
+	entries.forEach((entry) => {
+		if (!entry.isIntersecting) return;
+
+		const img = entry.target;
+		img.src = img.src.replace("/e_blur:800,q_30", "");
+		imgObserver.unobserve(entry.target);
+	});
+	}, imgOptions);
+
+	images.forEach((img) => {
+		imgObserver.observe(img);
+	});
 });
 
 $(window).on('load', function() {
@@ -399,6 +413,7 @@ function aw_data_images(){
 		var element			= jQuery(this);
 		var url				= element.data('img-url');
 		element.css({backgroundImage: 'url('+url+')'});
+
 	});
 }
 
