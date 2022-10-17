@@ -267,3 +267,7 @@
     object-fit: cover;
     border-radius: 10px;
 }
+
+.aw_portfolio .portfolio_list ul li .list_inner .image img {
+    margin-top: 1px;
+}

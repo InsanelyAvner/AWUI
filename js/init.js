@@ -28,7 +28,7 @@ $(() => {
 		if (!entry.isIntersecting) return;
 
 		const img = entry.target;
-		img.src = img.src.replace("/e_blur:800,q_30", "");
+		img.src = img.src.replace("e_blur:800,q_30", "e_blur:0,q_100");
 		imgObserver.unobserve(entry.target);
 	});
 	}, imgOptions);
