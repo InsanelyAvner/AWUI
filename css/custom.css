@@ -271,3 +271,20 @@
 .aw_portfolio .portfolio_list ul li .list_inner .image img {
     margin-top: 1px;
 }
+
+.aw_modalbox .close {
+    float: right;
+    margin-top: 10px;
+    margin-bottom: -45px;
+    margin-right: 14px;
+    position: static;
+}
+
+.aw_modalbox .close .svg {
+    width: 35px;
+    height: 35px;
+}
+
+.aw_modalbox .description_wrap {
+    z-index: -1;
+}
